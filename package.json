@@ -1,0 +1,14 @@
+{
+  "name": "hussleinc-engineer-application",
+  "version": "1.0.0",
+  "description": "Form Builder ",
+  "main": "index.js",
+  "author": "Nitesh Bansal",
+  "license": "MIT",
+  "dependencies": {
+    "tailwind": "^4.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.7"
+  }
+}

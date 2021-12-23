@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="src/index.js"></script>
+    <link href="./dist/output.css" rel="stylesheet">
+
+    <title>hussleinc-engineer-application</title>
+</head>
+
+<body>
+    <!--Link for progress-->
+    <div class="flex bg-[#f3f4f6] m-10">
+        <div id="nav1" class="flex-auto place-content-between rounded-md w-4 p-1 m-2 bg-[#e5e7eb]">First Step</div>
+        <div id="nav2" class="flex-auto place-content-between rounded-md w-4 p-1 m-2 bg-[#e5e7eb]">Second step</div>
+        <div id="nav3" class="flex-auto place-content-between rounded-md w-4 p-1 m-2 bg-[#e5e7eb]">Third step</div>
+        <div id="nav4" class="flex-auto place-content-between rounded-md w-4 p-1 m-2 bg-[#e5e7eb]">Fourth Step</div>
+    </div>
+    <!--divs for steps that contains questionbox, add question option and buttn to movbe next or submit-->
+    <div id="step1" class="step visible">
+            <div id="questionBox1"></div>
+
+        <button id="addnewquestion" onclick="addNewQ(1)" class="bg-[#86efac] p-1 text-xl rounded-md">+New</button>
+        <button id="1" onclick="nextSlide(this.id)">Next</button>
+    </div>
+    <div id="step2" class="step invisible">
+            <div id="questionBox2"></div>
+
+        <button id="addnewquestion" onclick="addNewQ(2)" class="bg-[#86efac] p-1 text-xl rounded-md">+New</button>
+        <button id="2" onclick="nextSlide(this.id)">Next</button>
+    </div>
+    <div id="step3" class="step invisible">
+            <div id="questionBox3"></div>
+
+        <button id="addnewquestion" onclick="addNewQ(3)" class="bg-[#86efac] p-1 text-xl rounded-md">+New</button>
+        <button id="3" onclick="nextSlide(this.id)">Next</button>
+    </div>
+    <div id="step4" class="step invisible">
+            <div id="questionBox4"></div>
+
+        <button id="addnewquestion" onclick="addNewQ(4)" class="bg-[#86efac] p-1 text-xl rounded-md">+New</button>
+        <button id="4" onclick="submit()" class="bg-[#86efac] p-1 text-xl rounded-md">Submit</button>
+    </div>
+</body>
+
+</html>
